@@ -1,3 +1,9 @@
 lightweight-charts
 yfinance
 pandas_ta
+ib_insync
+nest_asyncio
+#fredapi
+#TA-Lib
+#statsmodels
+#scikit-learn

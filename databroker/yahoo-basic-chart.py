@@ -8,7 +8,8 @@ if __name__ == '__main__':
     
     chart = Chart()
     
-    msft = yf.Ticker("NVDA")
+    symbol = "AMD"
+    msft = yf.Ticker(symbol)
     df = msft.history(period="1y")
 
     # prepare indicator values
@@ -26,6 +27,6 @@ if __name__ == '__main__':
     line = chart.create_line()    
     line.set(sma)
 
-    chart.watermark('MSFT')
+    chart.watermark(symbol)
     
     chart.show(block=True)
