@@ -9,7 +9,7 @@ if __name__ == '__main__':
     ib.connect('127.0.0.1', 7496, clientId=1)
 
     # request minute bars for a stock
-    stock = Stock('ENX', 'SMART', 'EUR')
+    stock = Stock('NVDA', 'SMART', 'USD')
 
     bars = ib.reqHistoricalData(
         stock, endDateTime='', durationStr='80000 S',
